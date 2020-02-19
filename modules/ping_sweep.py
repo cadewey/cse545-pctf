@@ -1,6 +1,4 @@
 # Attempts to ping sweep the specified CIDR addres space
-modes = [""]
-
 def name():
     return "ping-sweep"
 
