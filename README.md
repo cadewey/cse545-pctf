@@ -20,6 +20,6 @@ Using the existing modules as a template is a good way to get your own module of
    - `help()` (`str`) - A brief description of what your module does. This is displayed for your command in the main help page.
    - `args()` (`list` of `str`) - Additional positional arguments that your module requires.
    - `run()` (no return value) - The method that will be invoked when your tool is executed.
-3. That's is! The main loop will import anything in the `modules/` directory that meets this format.
+3. That's it! The main loop will import anything in the `modules/` directory that meets this format.
 
 **Possible improvement idea:** Make arguments more flexible, so that you can specify optional args and things of that nature.
