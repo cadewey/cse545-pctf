@@ -5,6 +5,9 @@
 def name():
     return "find-sid"
 
+def help():
+    return "Find files with the SUID/SGID bit set"
+
 def args():
     return ["path"]
 

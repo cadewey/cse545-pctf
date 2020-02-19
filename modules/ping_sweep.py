@@ -4,6 +4,9 @@ modes = [""]
 def name():
     return "ping-sweep"
 
+def help():
+    return "Look for hosts on the network"
+
 def args():
     return ["address"]
 
