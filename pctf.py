@@ -4,6 +4,7 @@ import argparse
 import importlib
 from glob import glob
 from pathlib import Path
+import sys
 
 parser = argparse.ArgumentParser(description="PCTF helper tool")
 command_parser = parser.add_subparsers(dest="command", metavar="command")
@@ -19,7 +20,8 @@ def load_modules():
             cmd.set_defaults(func=imported_module.run)
             for arg in imported_module.args():
                 cmd.add_argument(arg)
-        except e:
+        except:
+            e = sys.exc_info()[0]
             print("Unable to import module {0}".format(module))
             print("Exception: {0}".format(e))
 
