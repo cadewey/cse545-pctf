@@ -12,7 +12,7 @@ def args():
 
 def run(args):
 	rootdir=(args.path)
-	common_vulnerabilities = "gets scanf strcat strcpy strcmp printf access chown chgrp chmod mktemp tmpfile exec popen system _GET _POST shell_exec exec".split()
+	common_vulnerabilities = "gets scanf strcat strcpy strcmp printf access chown chgrp chmod mktemp tmpfile exec popen system GET POST shell_exec exec".split()
 	print(common_vulnerabilities)
 	try:
 		for folder, dirs, files in os.walk(rootdir):
