@@ -26,7 +26,8 @@ Using the existing modules as a template is a good way to get your own module of
 
 **References:** 
 
-https://linuxaria.com/howto/how-to-verify-ddos-attack-with-netstat-command-on-linux-terminal
+ - https://linuxaria.com/howto/how-to-verify-ddos-attack-with-netstat-command-on-linux-terminal
+ - Flags in `gcc-harden` taken from https://wiki.debian.org/Hardening
 
 **Requirements for Specific Modules:**
 
