@@ -11,7 +11,7 @@ def args():
     return ["arch", "path", "output"]
 
 def run(args):
-    from subprocess import run, DEVNULL, PIPE
+    from subprocess import run, DEVNULL, PIPE, STDOUT
     
     gcc_flags = [
         "-m{0}".format(args.arch)
@@ -26,5 +26,5 @@ def run(args):
         args.path
     ]
     
-    proc = run(["/usr/bin/gcc"] + args], stdout=PIPE, stderr=DEVNULL)
+    proc = run(["/usr/bin/gcc"] + args], stdout=PIPE, stderr=STDOUT)
     print(proc.stdout.decode("utf-8"))
