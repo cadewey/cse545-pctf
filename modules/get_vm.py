@@ -1,11 +1,11 @@
-# Attempts to take information for team, make a connection and give info!
+# Attempts to take information for team, make a connection, and give info!
 import swpag_client
 
 def name():
     return "get-vm"
 
 def help():
-    return "Revels server info."
+    return "Reveals Server VM info."
 
 def args():
     return ['team_ip', 'flag_token']
