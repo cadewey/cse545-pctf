@@ -28,9 +28,10 @@ Using the existing modules as a template is a good way to get your own module of
 
 https://linuxaria.com/howto/how-to-verify-ddos-attack-with-netstat-command-on-linux-terminal
 
-Requirements for Specific Modules:
-	swpag-client (Class Requirement): pip3 install swpag-client for:
-		submit-flag
-		get-vm	
-	pwn-tools:
-		gen-shellcode
+**Requirements for Specific Modules:**
+
+	1. swpag-client (Class Requirement): pip3 install swpag-client for:
+		- submit-flag
+		- get-vm	
+	2. pwn-tools:
+		- gen-shellcode
