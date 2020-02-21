@@ -26,5 +26,5 @@ def run(args):
         args.path
     ]
     
-    proc = run(["/usr/bin/gcc"] + args], stdout=PIPE, stderr=STDOUT)
+    proc = run(["/usr/bin/gcc"] + args, stdout=PIPE, stderr=STDOUT)
     print(proc.stdout.decode("utf-8"))
