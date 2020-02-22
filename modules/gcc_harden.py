@@ -14,7 +14,7 @@ def run(args):
     from subprocess import run, DEVNULL, PIPE, STDOUT
     
     gcc_flags = [
-        "-m{0}".format(args.arch)
+        "-m{0}".format(args.arch),
         "-fPIE",
         "-fstack-protector-strong",
         "-D_FORTIFY_SOURCE=2",
