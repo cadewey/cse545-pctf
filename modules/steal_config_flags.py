@@ -30,7 +30,7 @@ def run(args):
             print("Trying {0}...".format(team))
 
             p = Popen(["nc", team, "10005"], stdout=PIPE, stdin=PIPE)
-            tt = Timer(3, p.kill)
+            tt = Timer(1.5, p.kill)
             tt.start()
             
             for i in range(0,15):
